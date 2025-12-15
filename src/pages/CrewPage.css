@@ -1,0 +1,107 @@
+/* ===== Crew Page ===== */
+.crew-page {
+  background-image: url(/assets/crew/background-crew-mobile.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.crew-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 4rem;
+}
+
+.crew-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.crew-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+  margin-left: 2rem;
+  font-family: var(--font-family1);
+}
+
+.title-number {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: var(--third-color);
+}
+
+.crew-role {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--third-color);
+  letter-spacing: 0.1rem;
+}
+
+.crew-name {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.crew-description {
+  color: var(--secondary-color);
+  line-height: 1.7rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: var(--font-family3);
+}
+
+.crew-navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.crew-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.crew-dot.active {
+  background-color: white;
+  transform: scale(1);
+}
+
+.crew-image {
+  display: block;
+  min-width: 22rem;
+  width: 22rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .crew-main-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 7rem;
+  }
+
+  .crew-content {
+    flex: 1;
+  }
+
+  .crew-image-container {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}

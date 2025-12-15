@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: white;
+  --secondary-color: #e3e3e3ef;
+  --third-color: rgba(185, 185, 185, 0.404);
+  --backgroundColor: linear-gradient(
+    180deg,
+    #0b0d17 0%,
+    #0f1220 50%,
+    #1b1d2f 100%
+  );
+  --font-family1: "Barlow Condensed", sans-serif;
+  --font-family2: "Google Sans", sans-serif;
+  --font-family3: "Roboto Slab", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-color);
+}
+
+p {
+  color: var(--main-color);
+}
+
+img {
+  max-width: 100%;
+}

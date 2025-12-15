@@ -1,0 +1,146 @@
+/* ====== Header ====== */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--home-font);
+  padding: 3em;
+  position: relative;
+  font-family: var(--font-family1);
+}
+
+.logo {
+  width: 2, 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.09);
+  display: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 15px;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.icon-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.onClickHamburger {
+  /* background-color: #222731; */
+  background-color: #0c0e1a2a;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  padding: 2rem;
+  backdrop-filter: blur(100px);
+  --webkit-backdrop-filter: blur(80px);
+}
+
+.dropDownByHamburger li {
+  color: var(--main-color);
+}
+
+.dropDownByHamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style-type: none;
+  margin-top: 5rem;
+}
+
+.dropDown-nav-link {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.dropDown-nav-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 1.2px;
+  text-underline-offset: 15px;
+}
+
+.dropDownByHamburgerList span {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-links {
+    padding: 2rem 3rem;
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .line {
+    display: block;
+    background-color: #ffffff63;
+    width: 50%;
+    margin-left: 8rem;
+    height: 0.1rem;
+  }
+
+  .onClickHamburger {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 4rem;
+    min-width: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    padding: 3rem 7rem;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+  .logo {
+    width: 4rem;
+    min-width: 4rem;
+  }
+}
